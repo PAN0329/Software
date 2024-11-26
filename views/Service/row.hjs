@@ -1,0 +1,12 @@
+<tr class="align-middle">
+    <td>{{user_id}}</td>
+    <td>{{first_name}}</td>
+    <td>{{last_name}}</td>
+    <td>{{email}}</td>
+    <td>
+            <span class="btn btn-primary" hx-get="/Service/{{user_id}}/edit" hx-target="closest td">
+            <i class="bi bi-pencil"></i>
+        </span>
+        {{description}}
+    </td>
+</tr>

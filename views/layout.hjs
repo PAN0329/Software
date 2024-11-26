@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> {{title}} </title>
+        <script src="/htmx.min.js"></script>
+        <script src="/response-targets.js"></script>
+        <link rel="stylesheet" href="/bootstrap.min.css" >
+        <link rel="stylesheet" href="/bootstrap-icons.min.css">
+        <script src="/bootstrap.min.js"></script>
+    </head>
+    <body class="container">
+        <header class="text-center">
+            <h1>RentMachine Pro</h1>
+        </header>
+        {{> navbar}}
+        <div id="toast"></div>
+        <main id="main" {{#where}} hx-trigger="load" hx-get="{{where}}" {{/where}}>
+            <div class="text-center">
+                <i class="bi bi-car-front" style="font-size: 50vh;"></i>
+            </div>
+        </main>
+        <footer class="text-center">
+            <p>&copy; 2024 RentMachine Pro</p>
+        </footer>
+    </body>
+</html>

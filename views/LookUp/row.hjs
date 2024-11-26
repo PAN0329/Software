@@ -1,0 +1,23 @@
+<tr class="align-middle">
+    <td>
+        <span class="btn btn-danger" hx-delete="/LookUp/{{ID}}" hx-target="closest tr">
+            <i class="bi bi-trash3-fill"></i>
+        </span>
+        {{product_id}}
+    </td>
+    <td>
+        <span class="btn btn-primary" hx-get="/LookUp/{{ID}}/edit" hx-target="closest td">
+            <i class="bi bi-pencil"></i>
+        </span>
+        {{product_name}}
+    </td>
+    <td>
+        {{category_id}}
+    </td>
+    <td>
+        {{price}}
+    </td>
+    <td hx-get="/LookUp/{{ID}}" hx-target="#main">
+        <i class="bi bi-arrow-right btn btn-info"></i>
+    </td>
+</tr>

@@ -1,0 +1,8 @@
+<h2>Products</h2>
+<select class="form-select" name="typeID" hx-get="/LookUp/typedList" hx-target="#products">
+    <option value="">--- Select a product type ---</option>
+    {{#categories}}
+    <option value="{{category_id}}">{{category_name}}</option>
+    {{/categories}}
+</select>
+<div id="products"></div>

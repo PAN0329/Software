@@ -1,0 +1,20 @@
+<tr class="align-middle">
+    <td>
+        {{transaction_id}}
+    </td>
+    <td>
+        {{seller_id}}
+    </td>
+    <td>
+        {{buyer_id}}
+    </td>
+    <td>
+        {{product_id}}
+    </td>
+    <td>
+        {{price}}
+    </td>
+    <td>
+        {{status}}
+    </td>
+</tr>
